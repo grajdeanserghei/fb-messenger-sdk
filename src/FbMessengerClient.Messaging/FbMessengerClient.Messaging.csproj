@@ -6,7 +6,11 @@
     <Company />
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>0.0.1</Version>
+    <Version>0.0.4</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Data\projects\fb-messenger-client\src\FbMessengerClient.Messaging\FbMessengerClient.Messaging.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
