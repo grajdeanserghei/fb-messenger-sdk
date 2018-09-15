@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FbMessengerClient.WebhookEvents</name>
+    </assembly>
+    <members>
+        <member name="T:FbMessengerClient.WebhookEvents.Entry">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.Entry.Id">
+            <summary>
+            Page ID of page
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.Entry.Time">
+            <summary>
+            Time of update (epoch time in milliseconds)
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.Entry.Messaging">
+            <summary>
+            Array containing one messaging object. 
+            Note that even though this is an array, 
+            it will only contain one messaging object.
+            </summary>
+        </member>
+        <member name="T:FbMessengerClient.WebhookEvents.EventRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.EventRequest.Object">
+            <summary>
+            Should be equal to 'page'
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.EventRequest.Entry">
+            <summary>
+            Array containing event data
+            </summary>
+        </member>
+        <member name="T:FbMessengerClient.WebhookEvents.Infrastructure.Converters.MessagingBaseConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FbMessengerClient.WebhookEvents.Infrastructure.Converters.MessagingBaseConverter.CanConvert(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="objectType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FbMessengerClient.WebhookEvents.Infrastructure.Converters.MessagingBaseConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <summary>
+            
+            </summary>
+            <param name="reader"></param>
+            <param name="objectType"></param>
+            <param name="existingValue"></param>
+            <param name="serializer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FbMessengerClient.WebhookEvents.Infrastructure.Converters.MessagingBaseConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <summary>
+            
+            </summary>
+            <param name="writer"></param>
+            <param name="value"></param>
+            <param name="serializer"></param>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.Messages.Message.Mid">
+            <summary>
+            Message ID
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.Messages.Message.Text">
+            <summary>
+            Text of message
+            </summary>
+        </member>
+        <member name="T:FbMessengerClient.WebhookEvents.Messages.MessagingMessage">
+            <summary>
+            Text messages sent by user
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.Messages.MessagingMessage.Timestam">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.Messages.MessagingMessage.Message">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.MessagingBase.Sender">
+            <summary>
+            Sender user ID
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.MessagingBase.Recipient">
+            <summary>
+            Recipient user ID
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.Recipient.Id">
+            <summary>
+            Your Page ID.
+            </summary>
+        </member>
+        <member name="P:FbMessengerClient.WebhookEvents.Sender.Id">
+            <summary>
+            The PSID of the user that 
+            triggered the webhook event.
+            </summary>
+        </member>
+    </members>
+</doc>

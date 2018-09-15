@@ -4,8 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Serghei Grajdean</Authors>
-    <Version>0.0.1</Version>
+    <Version>0.0.7</Version>
     <Company />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Data\projects\fb-messenger-client\src\FbMessengerClient.WebhookEvents\FbMessengerClient.WebhookEvents.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
