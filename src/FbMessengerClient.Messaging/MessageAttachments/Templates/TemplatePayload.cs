@@ -1,4 +1,4 @@
-﻿namespace FbMessengerClient.Messaging.MessageAttachments.Templates
+﻿namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     public class TemplatePayload : IAttachmentBase<ITemplatePayload>
     {

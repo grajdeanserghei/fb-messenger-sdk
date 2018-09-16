@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using FbMessengerClient.Messaging.Buttons;
+using FbMessenger.Messaging.Buttons;
 using Newtonsoft.Json;
 
-namespace FbMessengerClient.Messaging.MessageAttachments.Templates.Generic
+namespace FbMessenger.Messaging.MessageAttachments.Templates.Generic
 {
     public class GenericTemplateElement
     {

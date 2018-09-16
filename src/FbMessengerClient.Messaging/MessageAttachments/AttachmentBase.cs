@@ -1,4 +1,4 @@
-﻿namespace FbMessengerClient.Messaging.MessageAttachments
+﻿namespace FbMessenger.Messaging.MessageAttachments
 {
     public interface IAttachmentBase<TPayload> where TPayload : IPayload
     {

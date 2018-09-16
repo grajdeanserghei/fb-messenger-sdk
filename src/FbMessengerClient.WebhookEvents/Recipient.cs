@@ -1,4 +1,4 @@
-﻿namespace FbMessengerClient.WebhookEvents
+﻿namespace FbMessenger.WebhookEvents
 {
     public class Recipient
     {

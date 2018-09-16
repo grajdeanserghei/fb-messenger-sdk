@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace FbMessengerClient.Messaging
+namespace FbMessenger.Messaging
 {
     /// <summary>
     /// Root object sent to facebook

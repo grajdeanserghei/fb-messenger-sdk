@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace FbMessengerClient.Messaging.QuickReplies
+namespace FbMessenger.Messaging.QuickReplies
 {
     public abstract class QuickReplyBase
     {

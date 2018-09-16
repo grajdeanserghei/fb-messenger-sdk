@@ -1,4 +1,4 @@
-namespace FbMessengerClient.Messaging
+namespace FbMessenger.Messaging
 {
     public interface IMessage
     {

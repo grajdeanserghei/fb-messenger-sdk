@@ -2,7 +2,7 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace FbMessengerClient.Messaging.QuickReplies
+namespace FbMessenger.Messaging.QuickReplies
 {
     [JsonConverter(typeof(StringEnumConverter))]
     public enum QuickReplyType

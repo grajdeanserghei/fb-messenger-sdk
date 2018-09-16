@@ -1,9 +1,9 @@
 ﻿using System;
-using FbMessengerClient.WebhookEvents.Messages;
+using FbMessenger.WebhookEvents.Messages;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace FbMessengerClient.WebhookEvents.Infrastructure.Converters
+namespace FbMessenger.WebhookEvents.Infrastructure.Converters
 {
     /// <summary>
     /// 

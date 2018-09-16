@@ -1,4 +1,4 @@
-namespace FbMessengerClient.Messaging.QuickReplies
+namespace FbMessenger.Messaging.QuickReplies
 {
     public class QuickReplyText : QuickReplyBase
     {

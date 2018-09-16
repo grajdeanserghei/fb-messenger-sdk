@@ -1,7 +1,7 @@
-using FbMessengerClient.Messaging.QuickReplies;
+using FbMessenger.Messaging.QuickReplies;
 using Newtonsoft.Json;
 
-namespace FbMessengerClient.Messaging
+namespace FbMessenger.Messaging
 {
     public class TextMessage : IMessage
     {

@@ -1,4 +1,4 @@
-﻿namespace FbMessengerClient.Messaging.Buttons
+﻿namespace FbMessenger.Messaging.Buttons
 {
     public class UrlButton : UrlButtonDefault
     {

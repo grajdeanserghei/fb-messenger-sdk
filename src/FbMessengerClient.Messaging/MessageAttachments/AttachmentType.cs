@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace FbMessengerClient.Messaging.MessageAttachments
+namespace FbMessenger.Messaging.MessageAttachments
 {
     [JsonConverter(typeof(StringEnumConverter))]
     public enum AttachmentType

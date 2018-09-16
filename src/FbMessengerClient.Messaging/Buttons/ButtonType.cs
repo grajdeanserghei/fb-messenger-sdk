@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace FbMessengerClient.Messaging.Buttons
+namespace FbMessenger.Messaging.Buttons
 {
     [JsonConverter(typeof(StringEnumConverter))]
     public enum ButtonType

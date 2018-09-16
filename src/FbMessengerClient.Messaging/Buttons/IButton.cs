@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FbMessengerClient.Messaging.Buttons
+namespace FbMessenger.Messaging.Buttons
 {
     public interface IButton
     {

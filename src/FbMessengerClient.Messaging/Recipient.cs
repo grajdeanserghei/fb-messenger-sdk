@@ -1,4 +1,4 @@
-namespace FbMessengerClient.Messaging
+namespace FbMessenger.Messaging
 {
     /// <summary>
     /// All requests must include one of id, phone_number, or user_ref.

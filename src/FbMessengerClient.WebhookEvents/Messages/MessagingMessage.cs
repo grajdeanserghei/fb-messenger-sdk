@@ -1,4 +1,4 @@
-﻿namespace FbMessengerClient.WebhookEvents.Messages
+﻿namespace FbMessenger.WebhookEvents.Messages
 {
     /// <summary>
     /// Text messages sent by user
