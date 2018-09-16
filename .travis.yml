@@ -3,14 +3,24 @@ solution: src/FbMessengerSdk.sln
 mono: none
 dotnet: 2.1.402
 script:
- - dotnet build src/FbMessengerSdk.sln
+ - dotnet build src/FbMessengerSdk.sln --configuration Release
 
 deploy:
-  skip_cleanup: true
-  provider: script
-  script:
-   - dotnet pack src/FbMessenger.Messaging/FbMessenger.Messaging.csproj --no-build /p:PackageVersion=0.1.0 --version-suffix "dev-$TRAVIS_BUILD_NUMBER"
-   - dotnet nuget push src/FbMessenger.Messaging/bin/Release/FbMessenger.Messaging.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
-  on:
-    branch: master
- 
+  - provider: script
+    skip_cleanup: true
+    script:
+    - dotnet pack /property:PackageVersion="0.1.0-dev-$TRAVIS_BUILD_NUMBER" --configuration Release --no-build src/FbMessenger.Messaging/FbMessenger.Messaging.csproj && dotnet nuget push src/FbMessenger.Messaging/bin/Release/FbMessenger.Messaging.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
+    on:
+      branch: dev
+  - provider: script
+    skip_cleanup: true
+    script:
+    - dotnet pack /property:PackageVersion="0.1.0-dev-$TRAVIS_BUILD_NUMBER" --configuration Release --no-build src/FbMessenger.WebhookEvents/FbMessenger.WebhookEvents.csproj && dotnet nuget push src/FbMessenger.WebhookEvents/bin/Release/FbMessenger.WebhookEvents.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
+    on:
+      branch: dev
+  - provider: script
+    skip_cleanup: true
+    script:
+       ./build/nuget_deploy.sh
+    on:
+      branch: master
