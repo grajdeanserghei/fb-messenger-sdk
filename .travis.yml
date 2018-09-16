@@ -18,9 +18,3 @@ deploy:
     - dotnet pack /property:PackageVersion="0.1.0-dev-$TRAVIS_BUILD_NUMBER" --configuration Release --no-build src/FbMessenger.WebhookEvents/FbMessenger.WebhookEvents.csproj && dotnet nuget push src/FbMessenger.WebhookEvents/bin/Release/FbMessenger.WebhookEvents.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
     on:
       branch: dev
-  - provider: script
-    skip_cleanup: true
-    script:
-       ./build/nuget_deploy.sh
-    on:
-      branch: master
