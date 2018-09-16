@@ -2,14 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>Serghei Grajdean</Authors>
-    <Version>0.1.0</Version>
+    <Version>0.0.0</Version>
     <Company />
   </PropertyGroup>
 
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Copyright>Serghei Grajdean</Copyright>
+    <PackageLicenseUrl>https://github.com/grajdeanserghei/fb-messenger-sdk/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/grajdeanserghei/fb-messenger-sdk</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/grajdeanserghei/fb-messenger-sdk</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
