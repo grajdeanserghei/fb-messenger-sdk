@@ -4,4 +4,12 @@ mono: none
 dotnet: 2.1.402
 script:
  - dotnet build
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: dotnet nuget push src/FbMessenger.Messaging/bin/Release/FbMessenger.Messaging.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
+  script: dotnet nuget push src/FbMessenger.WebhookEvents/bin/Release/FbMessenger.WebhookEvents.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
+  on:
+    branch: master
  
