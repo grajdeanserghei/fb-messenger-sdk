@@ -5,16 +5,15 @@ using Newtonsoft.Json.Converters;
 namespace FbMessenger.Messaging.Buttons
 {
     /// <summary>
-    /// Defines available button types
+    /// Enables or disables share button
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum ButtonType
+    public enum WebviewShareButtonType
     {
         /// <summary>
-        /// Button for <see cref="UrlButton"/> and <see cref="UrlButtonDefault"/>
+        /// Hides share button in web view
         /// </summary>
-        [EnumMember(Value = "web_url")]
-        WebUrl,
-
+        [EnumMember(Value = "hide")]
+        Hide
     }
 }

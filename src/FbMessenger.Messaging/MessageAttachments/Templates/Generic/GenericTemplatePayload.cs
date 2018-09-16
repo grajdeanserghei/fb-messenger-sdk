@@ -12,7 +12,7 @@ namespace FbMessenger.Messaging.MessageAttachments.Templates.Generic
         /// Messenger for the template message. 
         /// Defaults to false.
         /// </summary>
-        public bool Sharable { get; set; }
+        public bool? Sharable { get; set; }
 
         /// <summary>
         /// <strong>Optional.</strong> The aspect ratio used to 
@@ -21,7 +21,7 @@ namespace FbMessenger.Messaging.MessageAttachments.Templates.Generic
         /// Defaults to horizontal.
         /// </summary>
         [JsonProperty("image_aspect_ratio")]
-        public ImageAspectRation ImageAspectRation { get; set; }
+        public ImageAspectRation? ImageAspectRation { get; set; }
 
         /// <summary>
         /// An array of element objects that 

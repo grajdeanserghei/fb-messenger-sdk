@@ -1,0 +1,8 @@
+﻿{
+  "recipient": {
+    "id": "12345"
+  },
+  "message": {
+    "text": "hello, world!"
+  }
+}
