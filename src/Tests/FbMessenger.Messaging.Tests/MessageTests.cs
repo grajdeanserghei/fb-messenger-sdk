@@ -4,6 +4,7 @@ using FbMessenger.Messaging.Buttons;
 using FbMessenger.Messaging.Infrastructure;
 using FbMessenger.Messaging.MessageAttachments.Templates;
 using FbMessenger.Messaging.MessageAttachments.Templates.Generic;
+using FbMessenger.Messaging.Tests.MessageRequestFactories;
 using Newtonsoft.Json;
 using Xunit;
 
@@ -15,70 +16,26 @@ namespace FbMessenger.Messaging.Tests
 
         public static List<object[]> Requests = new List<object[]>
         {
-            new object[]
-            {
-                new MessageRequest
-                {
-                    Recipient = new Recipient { Id = "12345" },
-                    Message = new Message
-                    {
-                        Text = "hello, world!"
-                    }
-                },
-                "text-message.json"
-            },
-            new object[]
-            {
-                new MessageRequest
-                {
-                    Recipient = new Recipient { Id = "12345" },
-                    Message = new Message
-                    {
-                        Attachment = new TemplateAttachment
-                        {
-                            Payload = new GenericTemplatePayload
-                            {
-                                Elements = new []{new GenericTemplateElement
-                                {
-                                    Title = "Welcome!",
-                                    ImageUrl = "https://petersfancybrownhats.com/company_image.png",
-                                    Subtitle = "We have the right hat for everyone.",
-                                    DefaultAction = new UrlButtonDefault
-                                    {
-                                        Url="https://petersfancybrownhats.com/view?item=103",
-                                        WebviewHeightRatio = WebviewHeightRatioType.Tall
-                                    },
-                                    Buttons = new IButton[]
-                                    {
-                                        new UrlButton
-                                        {
-                                            Url="https://petersfancybrownhats.com",
-                                            Title = "View Website"
-                                        }
-                                    }
-                                }
-                                }
-                            }
-                        }
-                    }
-                },
-                "generic-template.json"
-            }
+            new [] { new TextMessageFactory() },
+            new [] { new GenericTemplateFactory() }
         };
 
     
 
         [Theory]
         [MemberData(nameof(Requests))]
-        public void TextMessageOnly(MessageRequest request, string expectedJsonFile)
+        public void TextMessageOnly(IMessageRequestFactory factory)
         {
             // Arrange
-            var fullPath = Path.Combine("ExpectedJsons", expectedJsonFile);
+            var fullPath = Path.Combine("ExpectedJsons", factory.TestFileName);
+            fullPath = Path.ChangeExtension(fullPath, "json");
 
             var expectedJson = File.ReadAllText(fullPath);
 
             var options = settingsFactory.GetSettings();
             options.Formatting = Formatting.Indented;
+
+            var request = factory.CreateRequest();
 
             // Act
             var json = JsonConvert.SerializeObject(request, options);
