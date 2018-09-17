@@ -2,8 +2,14 @@
 
 namespace FbMessenger.Messaging.MessageAttachments.Templates.Generic
 {
+    /// <summary>
+    /// Generic Template payload
+    /// </summary>
     public class GenericTemplatePayload : ITemplatePayload
     {
+        /// <summary>
+        /// Value must be generic
+        /// </summary>
         public TemplateType TemplateType => TemplateType.Generic;
 
         /// <summary>
