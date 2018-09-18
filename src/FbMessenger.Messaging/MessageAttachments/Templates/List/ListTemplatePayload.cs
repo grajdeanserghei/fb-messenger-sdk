@@ -23,18 +23,18 @@ namespace FbMessenger.Messaging.MessageAttachments.Templates.List
         public TopElementStyle? TopElementStyle { get; set; }
 
         /// <summary>
-        /// Optional. Button to display at the bottom of the list. 
-        /// Maximum of 1 button is supported.
-        /// </summary>
-        public IButton Buttons { get; set; }
-
-        /// <summary>
         /// Array of objects that describe items in the list.
         /// Minimum of 2 elements required. 
         /// Maximum of 4 elements is supported.
         /// </summary>
         public ListTemplateElement[] Elements { get; set; }
 
+        /// <summary>
+        /// Optional. Button to display at the bottom of the list. 
+        /// Maximum of 1 button is supported.
+        /// </summary>
+        public IButton[] Buttons { get; set; }
+        
         /// <summary>
         /// Optional. Set to true to enable the native 
         /// share button in Messenger for the template message. 

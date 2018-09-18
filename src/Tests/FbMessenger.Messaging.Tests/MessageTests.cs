@@ -17,7 +17,8 @@ namespace FbMessenger.Messaging.Tests
         public static List<object[]> Requests = new List<object[]>
         {
             new [] { new TextMessageFactory() },
-            new [] { new GenericTemplateFactory() }
+            new [] { new GenericTemplateFactory() },
+            new [] { new ListTemplateFactory() },
         };
 
     

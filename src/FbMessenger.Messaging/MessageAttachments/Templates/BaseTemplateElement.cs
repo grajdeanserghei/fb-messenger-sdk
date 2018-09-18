@@ -18,17 +18,17 @@ namespace FbMessenger.Messaging.MessageAttachments.Templates
         public virtual string Title { get; set; }
 
         /// <summary>
-        /// <strong>Optional.</strong> The URL of the image to 
-        /// display in the template.
-        /// </summary>
-        [JsonProperty("image_url")]
-        public virtual string ImageUrl { get; set; }
-
-        /// <summary>
         /// <strong>Optional.</strong> The subtitle to display in 
         /// the template. 80 character limit.
         /// </summary>
         public virtual string Subtitle { get; set; }
+
+        /// <summary>
+        /// <strong>Optional.</strong> The URL of the image to 
+        /// display in the template.
+        /// </summary>
+        [JsonProperty("image_url")]
+        public virtual string ImageUrl { get; set; }        
 
         /// <summary>
         /// <strong>Optional.</strong> The default action executed when 
