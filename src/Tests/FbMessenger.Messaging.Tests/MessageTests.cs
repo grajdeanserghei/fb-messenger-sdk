@@ -22,9 +22,8 @@ namespace FbMessenger.Messaging.Tests
             new [] { new ButtonTemplateFactory() },
             new [] { new OpenGraphTemplateFactory() },
             new [] { new AttachmentIdMediaTemplateFactory() },
+            new [] { new UrlMediaTemplateFactory() },
         };
-
-    
 
         [Theory]
         [MemberData(nameof(Requests))]

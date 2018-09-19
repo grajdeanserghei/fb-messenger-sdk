@@ -1,0 +1,19 @@
+{
+  "recipient": {
+    "id": "1234-url"
+  },
+  "message": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "media",
+        "elements": [
+          {
+            "url": "https://www.facebook.com/<USERNAME>/videos/<NUMERIC_ID>/",
+            "media_type": "video"
+          }
+        ]
+      }
+    }
+  }
+}
