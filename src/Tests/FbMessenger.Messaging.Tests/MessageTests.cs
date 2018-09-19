@@ -20,6 +20,7 @@ namespace FbMessenger.Messaging.Tests
             new [] { new GenericTemplateFactory() },
             new [] { new ListTemplateFactory() },
             new [] { new ButtonTemplateFactory() },
+            new [] { new OpenGraphTemplateFactory() },
         };
 
     
