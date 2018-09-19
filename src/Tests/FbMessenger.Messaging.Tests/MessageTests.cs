@@ -19,6 +19,7 @@ namespace FbMessenger.Messaging.Tests
             new [] { new TextMessageFactory() },
             new [] { new GenericTemplateFactory() },
             new [] { new ListTemplateFactory() },
+            new [] { new ButtonTemplateFactory() },
         };
 
     

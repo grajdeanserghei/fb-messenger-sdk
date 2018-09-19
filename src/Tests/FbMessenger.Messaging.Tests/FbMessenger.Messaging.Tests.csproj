@@ -17,15 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="ExpectedJsons\generic-template.json">
+    <None Update="ExpectedJsons\*.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ExpectedJsons\text-message.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ExpectedJsons\list-template.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </None>    
   </ItemGroup>
 
 </Project>
