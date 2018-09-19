@@ -1,0 +1,19 @@
+{
+  "recipient": {
+    "id": "1234-at"
+  },
+  "message": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "media",
+        "elements": [
+          {
+            "attachment_id": "12345id",
+            "media_type": "image"
+          }
+        ]
+      }
+    }
+  }
+}
