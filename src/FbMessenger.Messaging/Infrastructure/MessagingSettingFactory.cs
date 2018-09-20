@@ -15,9 +15,13 @@ namespace FbMessenger.Messaging.Infrastructure
         /// <returns></returns>
         public JsonSerializerSettings GetSettings()
         {
+            var contractResolver = new DefaultContractResolver
+            {
+                NamingStrategy = new SnakeCaseNamingStrategy()
+            };
             var settings = new JsonSerializerSettings
             {
-                ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                ContractResolver = contractResolver,
                 NullValueHandling = NullValueHandling.Ignore
             };
 
