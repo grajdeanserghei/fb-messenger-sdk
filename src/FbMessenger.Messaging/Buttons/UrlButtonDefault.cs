@@ -25,13 +25,11 @@ namespace FbMessenger.Messaging.Buttons
         /// Valid values: compact, tall, full. 
         /// Defaults to full.
         /// </summary>
-        [JsonProperty("webview_height_ratio")]
         public WebviewHeightRatioType? WebviewHeightRatio { get; set; }
 
         /// <summary>
         /// Optional. Must be true if using Messenger Extensions.
         /// </summary>
-        [JsonProperty("messenger_extensions")]
         public bool? MessengerExtensions { get; set; }
 
         /// <summary>
@@ -42,7 +40,6 @@ namespace FbMessenger.Messaging.Buttons
         /// It may only be specified if 
         /// messenger_extensions is true.
         /// </summary>
-        [JsonProperty("fallback_url")]
         public string FallbackUrl { get; set; }
 
         /// <summary>
@@ -51,7 +48,6 @@ namespace FbMessenger.Messaging.Buttons
         /// This does not affect any shares 
         /// initiated by the developer using Extensions.
         /// </summary>
-        [JsonProperty("webview_share_button")]
         public WebviewShareButtonType? WebviewShareButton { get; set; }
     }
 }

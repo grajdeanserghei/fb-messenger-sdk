@@ -12,7 +12,6 @@ namespace FbMessenger.Messaging.MessageAttachments.Templates.Media
         /// The type of media being sent - image or video is supported.
         /// </summary>
         /// <value></value>
-        [JsonProperty("media_type")]
         public MediaType MediaType { get; set; }
 
         /// <summary>

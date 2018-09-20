@@ -27,7 +27,6 @@ namespace FbMessenger.Messaging
         /// <summary>
         /// Optional. Array of quick_reply to be sent with messages
         /// </summary>
-        [JsonProperty("quick_replies")]
         public QuickReplyBase[] QuickReplies { get; set; }
 
         /// <summary>

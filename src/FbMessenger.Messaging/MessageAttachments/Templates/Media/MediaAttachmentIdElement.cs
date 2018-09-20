@@ -15,7 +15,6 @@ namespace FbMessenger.Messaging.MessageAttachments.Templates.Media
         /// The attachment ID of the image or video. Cannot be used if url is set.
         /// </summary>
         /// <value></value>
-        [JsonProperty("attachment_id")]
         public string AttachmentId { get; set; }
     }
 }

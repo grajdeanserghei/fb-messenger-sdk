@@ -19,7 +19,6 @@ namespace FbMessenger.Messaging.MessageAttachments.Templates.List
         /// compact: Renders a plain list item. 
         /// large: Renders the first list item as a cover item.
         /// </summary>
-        [JsonProperty("top_element_style")]
         public TopElementStyle? TopElementStyle { get; set; }
 
         /// <summary>
@@ -41,6 +40,5 @@ namespace FbMessenger.Messaging.MessageAttachments.Templates.List
         /// Defaults to false.
         /// </summary>
         public bool? Sharable { get; set; }
-
     }
 }

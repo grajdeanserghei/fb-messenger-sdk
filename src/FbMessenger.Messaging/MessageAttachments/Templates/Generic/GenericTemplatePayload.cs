@@ -26,7 +26,6 @@ namespace FbMessenger.Messaging.MessageAttachments.Templates.Generic
         /// Must be horizontal (1.91:1) or square (1:1). 
         /// Defaults to horizontal.
         /// </summary>
-        [JsonProperty("image_aspect_ratio")]
         public ImageAspectRation? ImageAspectRation { get; set; }
 
         /// <summary>

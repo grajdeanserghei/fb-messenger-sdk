@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 using FbMessenger.Messaging.Buttons;
-using Newtonsoft.Json;
 
 namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
@@ -27,7 +23,6 @@ namespace FbMessenger.Messaging.MessageAttachments.Templates
         /// <strong>Optional.</strong> The URL of the image to 
         /// display in the template.
         /// </summary>
-        [JsonProperty("image_url")]
         public virtual string ImageUrl { get; set; }        
 
         /// <summary>
@@ -35,7 +30,6 @@ namespace FbMessenger.Messaging.MessageAttachments.Templates
         /// the template is tapped. Accepts the same 
         /// properties as URL button, except title.
         /// </summary>
-        [JsonProperty("default_action")]
         public virtual UrlButtonDefault DefaultAction { get; set; }
 
         /// <summary>
