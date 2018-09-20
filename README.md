@@ -11,7 +11,9 @@ A client to call Facebook messenger API described in [Messenger Platform documen
 
 The SDK is available as NuGet pacakges. Stable version and dev version can be downloaded from NuGet repository.
 
-Package name                              | Stable (master branch)    | Nightly (dev branch)
------------------------|-------------------------------------------|-----------------------------|-------------------------
-FbMessenger.Messaging | _comming soon_ | [![NuGet](https://img.shields.io/nuget/v/FbMessenger.Messaging.svg?style=flat-square&label=nuget)](https://www.nuget.org/packages/FbMessenger.Messaging/)
-FbMessenger.WebhookEvents | _comming soon_ | [![NuGet](https://img.shields.io/nuget/v/FbMessenger.WebhookEvents.svg?style=flat-square&label=nuget)](https://www.nuget.org/packages/FbMessenger.WebhookEvents/)
+
+
+|Package name               | Stable (master branch)      | Nightly (dev branch)    |
+|---------------------------|:---------------------------:|:-----------------------:|
+|FbMessenger.Messaging      | _comming soon_              | [![NuGet](https://img.shields.io/nuget/v/FbMessenger.Messaging.svg?style=flat-square&label=nuget)](https://www.nuget.org/packages/FbMessenger.Messaging/)         |
+|FbMessenger.WebhookEvents  | _comming soon_              | [![NuGet](https://img.shields.io/nuget/v/FbMessenger.WebhookEvents.svg?style=flat-square&label=nuget)](https://www.nuget.org/packages/FbMessenger.WebhookEvents/) |
