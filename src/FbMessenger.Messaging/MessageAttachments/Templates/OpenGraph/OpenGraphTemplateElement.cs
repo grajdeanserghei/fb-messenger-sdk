@@ -1,6 +1,6 @@
 using FbMessenger.Messaging.Buttons;
 
-namespace FbMessenger.Messaging.MessageAttachments.Templates.OpenGraph
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// Open graph template elements

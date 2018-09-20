@@ -1,4 +1,4 @@
-namespace FbMessenger.Messaging.MessageAttachments.Templates.Media
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// The media template that sends media through Facebook url.

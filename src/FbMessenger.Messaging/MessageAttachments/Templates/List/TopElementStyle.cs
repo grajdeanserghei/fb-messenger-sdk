@@ -2,7 +2,7 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace FbMessenger.Messaging.MessageAttachments.Templates.List
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// Defines the format of the first elemnt.

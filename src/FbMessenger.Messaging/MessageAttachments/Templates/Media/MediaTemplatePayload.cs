@@ -1,4 +1,4 @@
-namespace FbMessenger.Messaging.MessageAttachments.Templates.Media
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// The media template allows you to send a structured message 

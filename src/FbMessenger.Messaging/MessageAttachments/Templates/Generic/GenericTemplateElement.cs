@@ -1,4 +1,4 @@
-﻿namespace FbMessenger.Messaging.MessageAttachments.Templates.Generic
+﻿namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// Element of Generic template

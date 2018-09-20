@@ -1,7 +1,6 @@
 using FbMessenger.Messaging.Buttons;
-using Newtonsoft.Json;
 
-namespace FbMessenger.Messaging.MessageAttachments.Templates.List
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// Element of Generic template

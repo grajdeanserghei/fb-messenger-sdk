@@ -1,9 +1,11 @@
 using FbMessenger.Messaging.MessageAttachments;
 using FbMessenger.Messaging.QuickReplies;
-using Newtonsoft.Json;
 
 namespace FbMessenger.Messaging
 {
+    /// <summary>
+    /// Message object from Send API.
+    /// </summary>
     public class Message : IMessage
     {
         /// <summary>

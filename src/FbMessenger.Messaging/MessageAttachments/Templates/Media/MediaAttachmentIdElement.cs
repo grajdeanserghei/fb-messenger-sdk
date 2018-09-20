@@ -1,6 +1,4 @@
-using Newtonsoft.Json;
-
-namespace FbMessenger.Messaging.MessageAttachments.Templates.Media
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// To send an image, send a POST request to the Send API, 

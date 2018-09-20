@@ -1,9 +1,7 @@
-﻿using Newtonsoft.Json;
-
-namespace FbMessenger.Messaging.Buttons
+﻿namespace FbMessenger.Messaging.Buttons
 {
     /// <summary>
-    /// 
+    /// The URL Button opens a web page in the Messenger webview.
     /// </summary>
     public class UrlButtonDefault : IButton
     {

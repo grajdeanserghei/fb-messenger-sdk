@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace FbMessenger.Messaging.MessageAttachments.Templates.Generic
+﻿namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// Generic Template payload

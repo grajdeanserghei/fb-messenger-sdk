@@ -2,7 +2,7 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace FbMessenger.Messaging.MessageAttachments.Templates.Media
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// Supported Media template types

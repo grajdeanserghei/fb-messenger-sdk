@@ -1,6 +1,6 @@
 using FbMessenger.Messaging.Buttons;
 
-namespace FbMessenger.Messaging.MessageAttachments.Templates.Button
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// The button template allows you to send a structured message that includes text and buttons.

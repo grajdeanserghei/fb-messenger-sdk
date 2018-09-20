@@ -1,4 +1,4 @@
-namespace FbMessenger.Messaging.MessageAttachments.Templates.OpenGraph
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// The Open Graph template allows you to send a structured message

@@ -1,4 +1,4 @@
-namespace FbMessenger.Messaging.MessageAttachments.Templates.List
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// Element of List template

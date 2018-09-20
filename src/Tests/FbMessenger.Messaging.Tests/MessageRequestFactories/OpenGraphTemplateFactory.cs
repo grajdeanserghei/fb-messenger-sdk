@@ -1,6 +1,5 @@
 using FbMessenger.Messaging.Buttons;
 using FbMessenger.Messaging.MessageAttachments.Templates;
-using FbMessenger.Messaging.MessageAttachments.Templates.OpenGraph;
 
 namespace FbMessenger.Messaging.Tests.MessageRequestFactories
 {

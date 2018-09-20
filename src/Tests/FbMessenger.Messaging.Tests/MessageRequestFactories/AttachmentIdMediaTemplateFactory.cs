@@ -1,5 +1,4 @@
 using FbMessenger.Messaging.MessageAttachments.Templates;
-using FbMessenger.Messaging.MessageAttachments.Templates.Media;
 
 namespace FbMessenger.Messaging.Tests.MessageRequestFactories
 {

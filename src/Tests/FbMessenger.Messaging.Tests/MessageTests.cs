@@ -1,9 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using FbMessenger.Messaging.Buttons;
 using FbMessenger.Messaging.Infrastructure;
-using FbMessenger.Messaging.MessageAttachments.Templates;
-using FbMessenger.Messaging.MessageAttachments.Templates.Generic;
 using FbMessenger.Messaging.Tests.MessageRequestFactories;
 using Newtonsoft.Json;
 using Xunit;

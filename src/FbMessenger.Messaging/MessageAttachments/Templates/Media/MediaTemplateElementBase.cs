@@ -1,7 +1,6 @@
 using FbMessenger.Messaging.Buttons;
-using Newtonsoft.Json;
 
-namespace FbMessenger.Messaging.MessageAttachments.Templates.Media
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// Element item of <see cref="MediaTemplatePayload"/>
