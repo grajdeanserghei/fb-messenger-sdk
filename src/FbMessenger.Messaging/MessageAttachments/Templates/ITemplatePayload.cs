@@ -1,10 +1,13 @@
-﻿using Newtonsoft.Json;
-
-namespace FbMessenger.Messaging.MessageAttachments.Templates
+﻿namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
+    /// <summary>
+    /// Interface for all template payloads.
+    /// </summary>
     public interface ITemplatePayload : IPayload
     {
-        [JsonProperty("template_type")]
+        /// <summary>
+        /// Specifies type of template.
+        /// </summary>
         TemplateType TemplateType { get; }
     }
 }

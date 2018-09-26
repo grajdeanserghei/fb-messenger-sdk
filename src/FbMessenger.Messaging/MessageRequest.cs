@@ -1,5 +1,3 @@
-using Newtonsoft.Json;
-
 namespace FbMessenger.Messaging
 {
     /// <summary>
@@ -11,7 +9,6 @@ namespace FbMessenger.Messaging
         /// The messaging type of the message 
         /// being sent.
         /// </summary>
-        [JsonProperty("messaging_type")]
         public MessagingType? MessagingType {get;set;}
 
         /// <summary>

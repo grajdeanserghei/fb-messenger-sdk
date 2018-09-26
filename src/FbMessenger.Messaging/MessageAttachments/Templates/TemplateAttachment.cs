@@ -1,6 +1,9 @@
 ﻿namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
-    public class TemplatePayload : IAttachmentBase<ITemplatePayload>
+    /// <summary>
+    /// Attachment implementation for Template attachments
+    /// </summary>
+    public class TemplateAttachment : IAttachmentBase<ITemplatePayload>
     {
         /// <summary>
         /// Value must be template

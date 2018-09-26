@@ -1,10 +1,13 @@
-using Newtonsoft.Json;
-
 namespace FbMessenger.Messaging.QuickReplies
 {
+    /// <summary>
+    /// Base class for quick reply.
+    /// </summary>
     public abstract class QuickReplyBase
     {
-        [JsonProperty("content_type")]
+        /// <summary>
+        /// Content type of quick reply.
+        /// </summary>
         public abstract QuickReplyType ContentType { get; }
     }
 }

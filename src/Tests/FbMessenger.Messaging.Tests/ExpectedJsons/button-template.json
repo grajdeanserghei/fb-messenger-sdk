@@ -1,0 +1,26 @@
+﻿{
+  "recipient": {
+    "id": "12345-button"
+  },
+  "message": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "What do you want to do next?",
+        "buttons": [
+          {
+            "title": "Visit Messenger",
+            "type": "web_url",
+            "url": "https://www.messenger.com"
+          },
+          {
+            "type": "postback",
+            "title": "View More",
+            "payload": "payload"
+          }
+        ]
+      }
+    }
+  }
+}
