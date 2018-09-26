@@ -20,6 +20,7 @@ namespace FbMessenger.Messaging.Tests
             new [] { new OpenGraphTemplateFactory() },
             new [] { new AttachmentIdMediaTemplateFactory() },
             new [] { new UrlMediaTemplateFactory() },
+            new [] { new ReceiptTemplateFactory() },
         };
 
         [Theory]
@@ -42,6 +43,16 @@ namespace FbMessenger.Messaging.Tests
 
             // Assert
             Assert.Equal(expectedJson, json);
+        }
+
+        [Theory]
+        [InlineData(1.00, "1")]
+        [InlineData(32.00, "32")]
+        [InlineData(1.1234, "1.1234")]
+        public void Test(double value, string expectedString)
+        {
+            var actualString = value.ToString("#.####");
+            Assert.Equal(expectedString, actualString);
         }
     }
 }

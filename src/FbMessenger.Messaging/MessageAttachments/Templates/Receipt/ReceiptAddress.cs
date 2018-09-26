@@ -1,4 +1,6 @@
-﻿namespace FbMessenger.Messaging.MessageAttachments.Templates
+﻿using Newtonsoft.Json;
+
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// Optional. The shipping address of the order.
@@ -8,11 +10,13 @@
         /// <summary>
         /// The street address, line 1.
         /// </summary>
+        [JsonProperty("street_1")]
         public string Street1 { get; set; }
 
         /// <summary>
         /// Optional. The street address, line 2.
         /// </summary>
+        [JsonProperty("street_2")]
         public string Street2 { get; set; }
 
         /// <summary>

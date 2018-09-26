@@ -3,7 +3,7 @@
     /// <summary>
     /// Objects that describe items in the order
     /// </summary>
-    public class ReceiptElements
+    public class ReceiptElement
     {
         /// <summary>
         /// The name to display for the item.

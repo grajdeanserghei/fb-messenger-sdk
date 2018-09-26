@@ -1,4 +1,7 @@
-﻿namespace FbMessenger.Messaging.MessageAttachments.Templates
+﻿using FbMessenger.Messaging.Infrastructure;
+using Newtonsoft.Json;
+
+namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
     /// The receipt template allows to send an order confirmation 
@@ -49,6 +52,7 @@
         /// <summary>
         /// Optional. Timestamp of the order in seconds.
         /// </summary>
+        [JsonConverter(typeof(ToStringConverter))]
         public long? Timestamp { get; set; }
 
         /// <summary>
@@ -56,7 +60,7 @@
         /// that describe items in the order. 
         /// Sort order of the elements is not guaranteed.
         /// </summary>
-        public ReceiptElements Elements { get; set; }
+        public ReceiptElement[] Elements { get; set; }
 
         /// <summary>
         /// Optional. The shipping address of the order.
@@ -72,6 +76,6 @@
         /// Optional. An array of payment objects that describe 
         /// payment adjustments, such as discounts.
         /// </summary>
-        public ReceiptAdjustments Adjustments { get; set; }
+        public ReceiptAdjustment[] Adjustments { get; set; }
     }
 }

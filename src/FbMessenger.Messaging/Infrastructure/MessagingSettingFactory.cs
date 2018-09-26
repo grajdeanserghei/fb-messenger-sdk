@@ -22,8 +22,10 @@ namespace FbMessenger.Messaging.Infrastructure
             var settings = new JsonSerializerSettings
             {
                 ContractResolver = contractResolver,
-                NullValueHandling = NullValueHandling.Ignore
+                NullValueHandling = NullValueHandling.Ignore,
             };
+
+            settings.Converters.Add(new NumberJsonConverter());
 
             return settings;
         }

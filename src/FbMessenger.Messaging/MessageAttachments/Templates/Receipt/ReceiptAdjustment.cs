@@ -4,7 +4,7 @@
     /// Objects that describe payment adjustments, 
     /// such as discounts
     /// </summary>
-    public class ReceiptAdjustments
+    public class ReceiptAdjustment
     {
         /// <summary>
         /// Required if the adjustments array is set. 
