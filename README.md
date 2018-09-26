@@ -15,8 +15,8 @@ The SDK is available as NuGet pacakges. Stable version and dev version can be do
 
 |Package name               | Stable (master branch)      | Nightly (dev branch)    |
 |---------------------------|:---------------------------:|:-----------------------:|
-|FbMessenger.Messaging      | _comming soon_              | [![NuGet](https://img.shields.io/nuget/v/FbMessenger.Messaging.svg?style=flat-square&label=nuget)](https://www.nuget.org/packages/FbMessenger.Messaging/)         |
-|FbMessenger.WebhookEvents  | _comming soon_              | [![NuGet](https://img.shields.io/nuget/v/FbMessenger.WebhookEvents.svg?style=flat-square&label=nuget)](https://www.nuget.org/packages/FbMessenger.WebhookEvents/) |
+|FbMessenger.Messaging      | ![NuGet](https://img.shields.io/nuget/v/FbMessenger.Messaging.svg?style=flat-square&label=nuget)  | [![NuGet](https://img.shields.io/nuget/vpre/FbMessenger.Messaging.svg?style=flat-square&label=nuget)](https://www.nuget.org/packages/FbMessenger.Messaging/)         |
+|FbMessenger.WebhookEvents  | ![NuGet](https://img.shields.io/nuget/v/FbMessenger.WebhookEvents.svg?style=flat-square&label=nuget) | [![NuGet](https://img.shields.io/nuget/vpre/FbMessenger.WebhookEvents.svg?style=flat-square&label=nuget)](https://www.nuget.org/packages/FbMessenger.WebhookEvents/) |
 
 ## Suppported API
 
@@ -31,7 +31,7 @@ The SDK is available as NuGet pacakges. Stable version and dev version can be do
     - [x] [Media Template](https://developers.facebook.com/docs/messenger-platform/send-messages/template/media)
     - [x] [Receipt Template](https://developers.facebook.com/docs/messenger-platform/send-messages/template/receipt)
     - [ ] [Airline Templates](https://developers.facebook.com/docs/messenger-platform/send-messages/template/airline)
-  4. [Buttons](https://developers.facebook.com/docs/messenger-platform/send-messages/buttons)
+  1. [Buttons](https://developers.facebook.com/docs/messenger-platform/send-messages/buttons)
      - [x] [URL Button](https://developers.facebook.com/docs/messenger-platform/send-messages/buttons#url)
      - [x] [Postback Button](https://developers.facebook.com/docs/messenger-platform/send-messages/buttons#postback)
      - [ ] [Share Button](https://developers.facebook.com/docs/messenger-platform/send-messages/buttons#share)
