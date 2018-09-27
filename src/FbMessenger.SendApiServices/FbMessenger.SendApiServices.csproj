@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Serghei Grajdean</Authors>
+    <Company />
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>0.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageLicenseUrl>https://github.com/grajdeanserghei/fb-messenger-sdk/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/grajdeanserghei/fb-messenger-sdk</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/grajdeanserghei/fb-messenger-sdk</RepositoryUrl>
+    <Copyright>Serghei Grajdean</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FbMessenger.Messaging\FbMessenger.Messaging.csproj" />
+  </ItemGroup>
+
+</Project>
