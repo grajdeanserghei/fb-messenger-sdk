@@ -8,12 +8,17 @@ namespace FbMessenger.Messaging.Infrastructure
     /// </summary>
     public class MessagingSettingFactory
     {
+        public JsonSerializerSettings GetSettings()
+        {
+            return GetDefaultSettings();
+        }
+
         /// <summary>
         /// Create <see cref="JsonSerializerSettings"/> 
         /// to serialize Messaging models.
         /// </summary>
         /// <returns></returns>
-        public JsonSerializerSettings GetSettings()
+        public static JsonSerializerSettings GetDefaultSettings()
         {
             var contractResolver = new DefaultContractResolver
             {
