@@ -8,7 +8,7 @@
         /// <summary>
         /// Type of button. Must be web_url.
         /// </summary>
-        public ButtonType Type => ButtonType.WebUrl;
+        public string Type => "web_url";
 
         /// <summary>
         /// This URL is opened in a mobile browser 
