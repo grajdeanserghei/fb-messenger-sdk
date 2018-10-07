@@ -8,6 +8,6 @@
         /// <summary>
         /// Specifies type of button.
         /// </summary>
-        ButtonType Type { get; }
+        string Type { get; }
     }
 }

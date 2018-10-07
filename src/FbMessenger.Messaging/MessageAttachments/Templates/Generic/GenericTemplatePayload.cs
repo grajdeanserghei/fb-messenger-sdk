@@ -1,7 +1,9 @@
 ﻿namespace FbMessenger.Messaging.MessageAttachments.Templates
 {
     /// <summary>
-    /// Generic Template payload
+    /// The generic template supports a maximum of 10 elements per message. 
+    /// At least one property must be set in addition to title.
+    /// For more details check <see href="https://developers.facebook.com/docs/messenger-platform/reference/template/generic">Generic Template Reference</see>
     /// </summary>
     public class GenericTemplatePayload : ITemplatePayload
     {

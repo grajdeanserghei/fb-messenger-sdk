@@ -14,7 +14,7 @@ namespace FbMessenger.Messaging.Buttons
         /// <summary>
         /// Type of button. Must be postback.
         /// </summary>
-        public ButtonType Type => ButtonType.Postback;
+        public string Type => "postback";
 
         /// <summary>
         /// Button title. 20 character limit.
