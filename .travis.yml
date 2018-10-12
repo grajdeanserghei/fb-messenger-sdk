@@ -21,6 +21,12 @@ deploy:
   - provider: script
     skip_cleanup: true
     script:
+    - dotnet pack /property:PackageVersion="$BUILD_ENV_PACKAGE_VERSION-dev-$TRAVIS_BUILD_NUMBER" --configuration Release --no-build src/FbMessenger.SendApiServices/FbMessenger.SendApiServices.csproj && dotnet nuget push src/FbMessenger.SendApiServices/bin/Release/FbMessenger.SendApiServices.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
+    on:
+      branch: dev
+  - provider: script
+    skip_cleanup: true
+    script:
     - dotnet pack /property:PackageVersion="$TRAVIS_TAG" --configuration Release --no-build src/FbMessenger.Messaging/FbMessenger.Messaging.csproj && dotnet nuget push src/FbMessenger.Messaging/bin/Release/FbMessenger.Messaging.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
     on:
       branch: master
@@ -29,6 +35,13 @@ deploy:
     skip_cleanup: true
     script:
     - dotnet pack /property:PackageVersion="$TRAVIS_TAG" --configuration Release --no-build src/FbMessenger.WebhookEvents/FbMessenger.WebhookEvents.csproj && dotnet nuget push src/FbMessenger.WebhookEvents/bin/Release/FbMessenger.WebhookEvents.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
+    on:
+      branch: master
+      tags: true
+  - provider: script
+    skip_cleanup: true
+    script:
+    - dotnet pack /property:PackageVersion="$TRAVIS_TAG" --configuration Release --no-build src/FbMessenger.SendApiServices/FbMessenger.SendApiServices.csproj && dotnet nuget push src/FbMessenger.SendApiServices/bin/Release/FbMessenger.SendApiServices.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
     on:
       branch: master
       tags: true
