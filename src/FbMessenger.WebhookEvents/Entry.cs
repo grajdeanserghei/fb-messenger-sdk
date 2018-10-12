@@ -1,4 +1,7 @@
-﻿namespace FbMessenger.WebhookEvents
+﻿using FbMessenger.WebhookEvents.Infrastructure.Converters;
+using Newtonsoft.Json;
+
+namespace FbMessenger.WebhookEvents
 {
     /// <summary>
     /// 
@@ -20,6 +23,7 @@
         /// Note that even though this is an array, 
         /// it will only contain one messaging object.
         /// </summary>
+        [JsonProperty(ItemConverterType = typeof(MessagingBaseConverter))]
         public MessagingBase[] Messaging { get; set; }
     }
 }
