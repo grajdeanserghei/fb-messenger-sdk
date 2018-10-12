@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{133C3175
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FbMessenger.Messaging.Tests", "Tests\FbMessenger.Messaging.Tests\FbMessenger.Messaging.Tests.csproj", "{C66B0831-13DF-427E-837E-09E37B288845}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FbMessenger.SendApiServices", "FbMessenger.SendApiServices\FbMessenger.SendApiServices.csproj", "{CD4D5FF5-0B46-4012-B7C7-73934595A9C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FbMessenger.SendApiServices", "FbMessenger.SendApiServices\FbMessenger.SendApiServices.csproj", "{CD4D5FF5-0B46-4012-B7C7-73934595A9C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FbMessenger.WebhookEvents.Tests", "FbMessenger.WebhookEvents.Tests\FbMessenger.WebhookEvents.Tests.csproj", "{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,12 +73,25 @@ Global
 		{CD4D5FF5-0B46-4012-B7C7-73934595A9C1}.Release|x64.Build.0 = Release|Any CPU
 		{CD4D5FF5-0B46-4012-B7C7-73934595A9C1}.Release|x86.ActiveCfg = Release|Any CPU
 		{CD4D5FF5-0B46-4012-B7C7-73934595A9C1}.Release|x86.Build.0 = Release|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Debug|x64.Build.0 = Debug|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Debug|x86.Build.0 = Debug|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Release|x64.ActiveCfg = Release|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Release|x64.Build.0 = Release|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Release|x86.ActiveCfg = Release|Any CPU
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C66B0831-13DF-427E-837E-09E37B288845} = {133C3175-17AB-4C08-AE6F-9ECC2891EB71}
+		{8FB9D74A-C413-4A1D-A0BF-35C4033F2504} = {133C3175-17AB-4C08-AE6F-9ECC2891EB71}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B2500F80-5905-4579-A916-76B6C41F9FC1}
