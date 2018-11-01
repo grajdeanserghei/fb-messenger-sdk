@@ -1,0 +1,37 @@
+{
+  "object": "page",
+  "entry": [
+    {
+      "id": "585430178588888",
+      "time": 1539379922622,
+      "messaging": [
+        {
+          "sender": {
+            "id": "2213152575367777"
+          },
+          "recipient": {
+            "id": "585430178588888"
+          },
+          "timestamp": 1539379921555,
+          "message": {
+            "mid": "GFutWGmS6-T0P9-FkC1AC5McElgjuzhE0PYTWGqwWff_nXm2ScsY4aMSgvXYEqYGWqzPHXU0IGA0o2tH7X-sOw",
+            "seq": 160896,
+            "attachments": [
+              {
+                "title": "John's Location",
+                "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.bing",
+                "type": "location",
+                "payload": {
+                  "coordinates": {
+                    "lat": 45.7626,
+                    "long": 21.210838
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

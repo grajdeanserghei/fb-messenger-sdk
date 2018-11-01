@@ -33,7 +33,7 @@ namespace FbMessenger.WebhookEvents.Infrastructure.Converters
             {
                 return jo.ToObject<MultumediaPayload>(serializer);
             }
-            else if(jo["location"] != null)
+            else if(jo["coordinates"] != null)
             {
                 return jo.ToObject<LocationPayload>(serializer);
             }
