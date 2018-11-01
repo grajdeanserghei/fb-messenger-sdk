@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 using FbMessenger.WebhookEvents.Messages;
 using Newtonsoft.Json;
@@ -11,7 +10,7 @@ namespace FbMessenger.WebhookEvents.Tests
         [Fact]
         public void ValidJson_CanDeserializeObject()
         {
-            var json = GetMessageJson();
+            var json = GetMessageJson("text-message");
 
             var request = JsonConvert.DeserializeObject<EventRequest>(json);
 
@@ -22,7 +21,7 @@ namespace FbMessenger.WebhookEvents.Tests
         [Fact]
         public void TextMessage_EntryDeserializedAsMessagingMessage()
         {
-            var json = GetMessageJson();
+            var json = GetMessageJson("text-message");
 
             var request = JsonConvert.DeserializeObject<EventRequest>(json);
 
@@ -35,7 +34,7 @@ namespace FbMessenger.WebhookEvents.Tests
         [Fact]
         public void TextMessage_DeserializesSender()
         {
-            var json = GetMessageJson();
+            var json = GetMessageJson("text-message");
 
             var request = JsonConvert.DeserializeObject<EventRequest>(json);
             var message = request.Entry[0].Messaging[0];
@@ -47,7 +46,7 @@ namespace FbMessenger.WebhookEvents.Tests
         [Fact]
         public void TextMessage_DeserializesRecipient()
         {
-            var json = GetMessageJson();
+            var json = GetMessageJson("text-message");
 
             var request = JsonConvert.DeserializeObject<EventRequest>(json);
             var message = request.Entry[0].Messaging[0];
@@ -59,7 +58,7 @@ namespace FbMessenger.WebhookEvents.Tests
         [Fact]
         public void TextMessage_DeserializesMessage()
         {
-            var json = GetMessageJson();
+            var json = GetMessageJson("text-message");
 
             var request = JsonConvert.DeserializeObject<EventRequest>(json);
             var message = (MessagingMessage)request.Entry[0].Messaging[0];
@@ -69,9 +68,24 @@ namespace FbMessenger.WebhookEvents.Tests
             Assert.Equal("Hi", message.Message.Text);
         }
 
-        private string GetMessageJson()
+        [Fact]
+        public void TextMessage_DeserializesMultimediaPayload()
         {
-            using (var reader = File.OpenText("JsonSamples/text-message.json"))
+            var json = GetMessageJson("image-attachment-message");
+
+            var request = JsonConvert.DeserializeObject<EventRequest>(json);
+            var message = (MessagingMessage)request.Entry[0].Messaging[0];
+
+            Assert.NotNull(message.Message.Attachments[0]);
+            Assert.Equal(AttachmentTypes.Image, message.Message.Attachments[0].Type);
+            Assert.IsType<MultumediaPayload>(message.Message.Attachments[0].Payload);
+            var payload = (MultumediaPayload)message.Message.Attachments[0].Payload;
+            Assert.Equal("https://scontent.xx.fbcdn.net/v/t1.15752-9/43879105_502250616921195_414198265600_n.jpg?_nc_cat=102&_nc_ad=z-m&_nc_cid=0&oh=0276472b019431f24cfbe3c97a239c7a&oe=5444", payload.Url);
+        }
+
+        private string GetMessageJson(string fileName)
+        {
+            using (var reader = File.OpenText($"JsonSamples/{fileName}.json"))
             {
                 return reader.ReadToEnd();
             }
