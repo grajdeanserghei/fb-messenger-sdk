@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using FbMessenger.WebhookEvents.Infrastructure.Converters;
+using Newtonsoft.Json;
 
 namespace FbMessenger.WebhookEvents.Messages
 {
@@ -18,6 +17,7 @@ namespace FbMessenger.WebhookEvents.Messages
         /// URL of the file if attachment type is 
         /// image, audio, video or file
         /// </summary>
-        public string Payload { get; set; }
+        [JsonConverter(typeof(PayloadConverter))]
+        public IPayload Payload { get; set; }
     }
 }
