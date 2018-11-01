@@ -83,6 +83,23 @@ namespace FbMessenger.WebhookEvents.Tests
             Assert.Equal("https://scontent.xx.fbcdn.net/v/t1.15752-9/43879105_502250616921195_414198265600_n.jpg?_nc_cat=102&_nc_ad=z-m&_nc_cid=0&oh=0276472b019431f24cfbe3c97a239c7a&oe=5444", payload.Url);
         }
 
+        [Fact]
+        public void TextMessage_DeserializesLocationPayload()
+        {
+            var json = GetMessageJson("location-attachment-message");
+
+            var request = JsonConvert.DeserializeObject<EventRequest>(json);
+            var message = (MessagingMessage)request.Entry[0].Messaging[0];
+
+            Assert.NotNull(message.Message.Attachments[0]);
+            Assert.Equal(AttachmentTypes.Location, message.Message.Attachments[0].Type);
+            Assert.IsType<LocationPayload>(message.Message.Attachments[0].Payload);
+            var payload = (LocationPayload)message.Message.Attachments[0].Payload;
+            Assert.NotNull(payload.Coordinates);
+            Assert.Equal(45.7626d, payload.Coordinates.Lat, 4);
+            Assert.Equal(21.210838, payload.Coordinates.Long, 4);
+        }
+
         private string GetMessageJson(string fileName)
         {
             using (var reader = File.OpenText($"JsonSamples/{fileName}.json"))
